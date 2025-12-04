@@ -15,6 +15,7 @@ namespace FunctionCalculator
 
         private void calculateButton_Click(object sender, EventArgs e)
         {
+            int prova = 5;
             double parameterValue = Convert.ToDouble(parameterTextBox.Text);
             resultLabel.Text = Convert.ToString(calculator.ParseFunction(functionTextBox.Text, parameterValue));
         }
