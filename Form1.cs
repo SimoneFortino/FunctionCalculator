@@ -26,18 +26,15 @@ namespace FunctionCalculator
 
             plot.Plot.Add.Crosshair(0, 0);
         }
-        Calculator calculator = new Calculator();
 
         private void calculateButton_Click(object sender, EventArgs e)
         {
             try
             {
-                double parameterValue = Convert.ToDouble(parameterTextBox.Text);
-                resultLabel.Text = Convert.ToString(calculator.ParseFunction(functionTextBox.Text, parameterValue));
-
                 var expr = new Expression(functionTextBox.Text);
                 plot.Plot.Clear();
                 plot.Plot.Add.Crosshair(0, 0);
+                
                 // aggiunge la funzione usando NCalc
                 plot.Plot.Add.Function(x =>
                 {
