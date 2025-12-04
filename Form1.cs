@@ -42,6 +42,12 @@ namespace FunctionCalculator
                     return Convert.ToDouble(expr.Evaluate());
                 });
                 plot.Plot.Axes.SetLimits(-5, 5, -5, 5);
+                // force pixels to have a 1:1 scale ratio
+                plot.Plot.Axes.SquareUnits();
+
+                // even if you try to "stretch" the axis, it will adjust the axis limits automatically
+                plot.Plot.Axes.SetLimits(-10, 10, -10, 10);
+                
                 plot.Refresh();
                 
             }
