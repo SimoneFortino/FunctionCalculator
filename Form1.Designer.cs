@@ -106,7 +106,7 @@ namespace FunctionCalculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(597, 220);
+            this.ClientSize = new System.Drawing.Size(615, 451);
             this.Controls.Add(this.resultTitelLabel);
             this.Controls.Add(this.resultLabel);
             this.Controls.Add(this.xValueLabel);
