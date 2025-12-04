@@ -24,8 +24,7 @@ namespace FunctionCalculator
             // Add the FormsPlot to the panel
             panel1.Controls.Add(plot);
 
-            var crosshair = plot.Plot.Add.Crosshair(0, 0);
-            crosshair.LineColor = new Color(System.Drawing.Color.Black);
+            plot.Plot.Add.Crosshair(0, 0);
         }
 
         private void calculateButton_Click(object sender, EventArgs e)
@@ -37,7 +36,7 @@ namespace FunctionCalculator
                 plot.Plot.Add.Crosshair(0, 0);
                 
                 // aggiunge la funzione usando NCalc
-                var addedFunction = plot.Plot.Add.Function(x =>
+                plot.Plot.Add.Function(x =>
                 {
                     expr.Parameters["x"] = x;
                     return Convert.ToDouble(expr.Evaluate());
@@ -46,10 +45,9 @@ namespace FunctionCalculator
                 // force pixels to have a 1:1 scale ratio
                 plot.Plot.Axes.SquareUnits();
 
-                
+                // even if you try to "stretch" the axis, it will adjust the axis limits automatically
                 plot.Plot.Axes.SetLimits(-10, 10, -10, 10);
-                addedFunction.LineWidth = 2;
-                addedFunction.LineColor = new Color(System.Drawing.Color.Red);
+                
                 plot.Refresh();
                 
             }
