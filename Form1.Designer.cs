@@ -131,6 +131,8 @@ namespace FunctionCalculator
 
         private System.Windows.Forms.Button calculateButton;
         private System.Windows.Forms.TextBox functionTextBox;
+        
+        private ScottPlot.
 
         #endregion
     }
