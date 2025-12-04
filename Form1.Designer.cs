@@ -56,10 +56,10 @@ namespace FunctionCalculator
             // 
             // functionLabel
             // 
-            this.functionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.functionLabel.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.functionLabel.Location = new System.Drawing.Point(12, 9);
             this.functionLabel.Name = "functionLabel";
-            this.functionLabel.Size = new System.Drawing.Size(49, 30);
+            this.functionLabel.Size = new System.Drawing.Size(41, 28);
             this.functionLabel.TabIndex = 3;
             this.functionLabel.Text = "f(x):";
             // 
