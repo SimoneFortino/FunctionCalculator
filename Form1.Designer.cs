@@ -38,7 +38,7 @@ namespace FunctionCalculator
             // calculateButton
             // 
             this.calculateButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.calculateButton.Location = new System.Drawing.Point(468, 43);
+            this.calculateButton.Location = new System.Drawing.Point(487, 6);
             this.calculateButton.Name = "calculateButton";
             this.calculateButton.Size = new System.Drawing.Size(116, 31);
             this.calculateButton.TabIndex = 0;
@@ -51,7 +51,7 @@ namespace FunctionCalculator
             this.functionTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.functionTextBox.Location = new System.Drawing.Point(59, 6);
             this.functionTextBox.Name = "functionTextBox";
-            this.functionTextBox.Size = new System.Drawing.Size(525, 31);
+            this.functionTextBox.Size = new System.Drawing.Size(423, 31);
             this.functionTextBox.TabIndex = 1;
             // 
             // functionLabel
@@ -65,9 +65,9 @@ namespace FunctionCalculator
             // 
             // panel1
             // 
-            this.panel1.Location = new System.Drawing.Point(18, 80);
+            this.panel1.Location = new System.Drawing.Point(18, 53);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(566, 357);
+            this.panel1.Size = new System.Drawing.Size(566, 384);
             this.panel1.TabIndex = 7;
             // 
             // Form1
