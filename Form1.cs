@@ -5,6 +5,7 @@ using ScottPlot;
 using ScottPlot.WinForms;
 using NCalc;
 using ScottPlot.DataSources;
+using Color = ScottPlot.Color;
 
 namespace FunctionCalculator
 {
@@ -22,25 +23,8 @@ namespace FunctionCalculator
             
             // Add the FormsPlot to the panel
             panel1.Controls.Add(plot);
-            
-            
-            
-            
-            /*
-            var cross = FormsPlot1.Plot.Add.Crosshair(0, 0);
-            
-            cross.HorizontalLine.Color = new ScottPlot.Color(System.Drawing.Color.Black);
-            cross.HorizontalLine.LineWidth = 1;
-            
-            cross.VerticalLine.Color = new ScottPlot.Color(System.Drawing.Color.Black);
-            cross.VerticalLine.LineWidth = 1;
-            */
-            
-            
-            
-            
-            
-            
+
+            plot.Plot.Add.Crosshair(0, 0);
         }
         Calculator calculator = new Calculator();
 
@@ -52,7 +36,8 @@ namespace FunctionCalculator
                 resultLabel.Text = Convert.ToString(calculator.ParseFunction(functionTextBox.Text, parameterValue));
 
                 var expr = new Expression(functionTextBox.Text);
-
+                plot.Plot.Clear();
+                plot.Plot.Add.Crosshair(0, 0);
                 // aggiunge la funzione usando NCalc
                 plot.Plot.Add.Function(x =>
                 {
@@ -74,5 +59,7 @@ namespace FunctionCalculator
         {
             throw new System.NotImplementedException();
         }
+
+        
     }
 }
