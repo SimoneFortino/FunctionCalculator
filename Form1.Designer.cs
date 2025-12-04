@@ -67,7 +67,7 @@ namespace FunctionCalculator
             // 
             this.panel1.Location = new System.Drawing.Point(18, 53);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(566, 384);
+            this.panel1.Size = new System.Drawing.Size(575, 384);
             this.panel1.TabIndex = 7;
             // 
             // Form1
