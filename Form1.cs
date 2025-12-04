@@ -18,5 +18,6 @@ namespace FunctionCalculator
             double parameterValue = Convert.ToDouble(parameterTextBox.Text);
             resultLabel.Text = Convert.ToString(calculator.ParseFunction(functionTextBox.Text, parameterValue));
         }
+        34234234
     }
 }
