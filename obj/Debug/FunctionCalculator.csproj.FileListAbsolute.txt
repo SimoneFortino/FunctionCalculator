@@ -7,7 +7,6 @@ C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\obj\Deb
 C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\obj\Debug\FunctionCalculator.csproj.CoreCompileInputs.cache
 C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\obj\Debug\FunctionCalculator.exe
 C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\obj\Debug\FunctionCalculator.pdb
-C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\bin\Debug\ExtendedNumerics.BigDecimal.dll
 C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
 C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\bin\Debug\Microsoft.Extensions.Configuration.Binder.dll
@@ -22,7 +21,6 @@ C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\bin\Deb
 C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\bin\Debug\Microsoft.Extensions.Options.ConfigurationExtensions.dll
 C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\bin\Debug\Microsoft.Extensions.Options.dll
 C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\bin\Debug\Microsoft.Extensions.Primitives.dll
-C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\bin\Debug\Parlot.dll
 C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\bin\Debug\System.Buffers.dll
 C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\bin\Debug\System.Collections.Immutable.dll
 C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\bin\Debug\System.Diagnostics.DiagnosticSource.dll
@@ -33,7 +31,6 @@ C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\bin\Deb
 C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\bin\Debug\System.Text.Encodings.Web.dll
 C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\bin\Debug\System.Text.Json.dll
 C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\bin\Debug\System.Threading.Tasks.Extensions.dll
-C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\bin\Debug\ExtendedNumerics.BigDecimal.xml
 C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
 C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\bin\Debug\Microsoft.Extensions.Configuration.xml
 C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
@@ -48,7 +45,6 @@ C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\bin\Deb
 C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\bin\Debug\Microsoft.Extensions.Options.xml
 C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\bin\Debug\Microsoft.Extensions.Options.ConfigurationExtensions.xml
 C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\bin\Debug\Microsoft.Extensions.Primitives.xml
-C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\bin\Debug\Parlot.xml
 C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\bin\Debug\System.Buffers.xml
 C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\bin\Debug\System.Collections.Immutable.xml
 C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\bin\Debug\System.Diagnostics.DiagnosticSource.xml
@@ -154,3 +150,38 @@ C:\Users\luca\RiderProjects\FunctionCalculator\bin\Debug\SkiaSharp.pdb
 C:\Users\luca\RiderProjects\FunctionCalculator\bin\Debug\SkiaSharp.HarfBuzz.pdb
 C:\Users\luca\RiderProjects\FunctionCalculator\bin\Debug\SkiaSharp.Views.Desktop.Common.pdb
 C:\Users\luca\RiderProjects\FunctionCalculator\bin\Debug\SkiaSharp.Views.WindowsForms.pdb
+C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\bin\Debug\libSkiaSharp.dylib
+C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\bin\Debug\x86\libSkiaSharp.dll
+C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\bin\Debug\x64\libSkiaSharp.dll
+C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\bin\Debug\arm64\libSkiaSharp.dll
+C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\bin\Debug\x86\libSkiaSharp.so
+C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\bin\Debug\x64\libSkiaSharp.so
+C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\bin\Debug\arm\libSkiaSharp.so
+C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\bin\Debug\arm64\libSkiaSharp.so
+C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\bin\Debug\riscv64\libSkiaSharp.so
+C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\bin\Debug\loongarch64\libSkiaSharp.so
+C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\bin\Debug\musl-x64\libSkiaSharp.so
+C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\bin\Debug\musl-arm\libSkiaSharp.so
+C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\bin\Debug\musl-arm64\libSkiaSharp.so
+C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\bin\Debug\musl-riscv64\libSkiaSharp.so
+C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\bin\Debug\musl-loongarch64\libSkiaSharp.so
+C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\bin\Debug\HarfBuzzSharp.dll
+C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\bin\Debug\OpenTK.dll
+C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\bin\Debug\OpenTK.GLControl.dll
+C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\bin\Debug\ScottPlot.dll
+C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\bin\Debug\ScottPlot.WinForms.dll
+C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\bin\Debug\SkiaSharp.dll
+C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\bin\Debug\SkiaSharp.HarfBuzz.dll
+C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\bin\Debug\SkiaSharp.Views.Desktop.Common.dll
+C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\bin\Debug\SkiaSharp.Views.WindowsForms.dll
+C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\bin\Debug\HarfBuzzSharp.pdb
+C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\bin\Debug\OpenTK.pdb
+C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\bin\Debug\OpenTK.xml
+C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\bin\Debug\OpenTK.GLControl.pdb
+C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\bin\Debug\OpenTK.GLControl.xml
+C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\bin\Debug\ScottPlot.xml
+C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\bin\Debug\ScottPlot.WinForms.xml
+C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\bin\Debug\SkiaSharp.pdb
+C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\bin\Debug\SkiaSharp.HarfBuzz.pdb
+C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\bin\Debug\SkiaSharp.Views.Desktop.Common.pdb
+C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\bin\Debug\SkiaSharp.Views.WindowsForms.pdb

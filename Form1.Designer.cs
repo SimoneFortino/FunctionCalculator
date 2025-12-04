@@ -36,6 +36,7 @@ namespace FunctionCalculator
             this.xValueLabel = new System.Windows.Forms.Label();
             this.resultLabel = new System.Windows.Forms.Label();
             this.resultTitelLabel = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // calculateButton
@@ -102,11 +103,19 @@ namespace FunctionCalculator
             this.resultTitelLabel.TabIndex = 6;
             this.resultTitelLabel.Text = "result:";
             // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(18, 218);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(566, 219);
+            this.panel1.TabIndex = 7;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(615, 451);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.resultTitelLabel);
             this.Controls.Add(this.resultLabel);
             this.Controls.Add(this.xValueLabel);
@@ -120,6 +129,8 @@ namespace FunctionCalculator
             this.PerformLayout();
         }
 
+        private System.Windows.Forms.Panel panel1;
+
         private System.Windows.Forms.Label resultTitelLabel;
 
         private System.Windows.Forms.Label resultLabel;
@@ -132,7 +143,6 @@ namespace FunctionCalculator
         private System.Windows.Forms.Button calculateButton;
         private System.Windows.Forms.TextBox functionTextBox;
         
-        private ScottPlot.
 
         #endregion
     }
