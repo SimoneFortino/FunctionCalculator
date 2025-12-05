@@ -24,7 +24,8 @@ namespace FunctionCalculator
             // Add the FormsPlot to the panel
             panel1.Controls.Add(graph);
 
-            graph.Plot.Add.Crosshair(0, 0);
+            var crosshair = graph.Plot.Add.Crosshair(0, 0);
+            crosshair.LineColor = Colors.Black;
         }
 
         private void calculateButton_Click(object sender, EventArgs e)
@@ -33,14 +34,18 @@ namespace FunctionCalculator
             {
                 var expr = new Expression(functionTextBox.Text);
                 graph.Plot.Clear();
-                graph.Plot.Add.Crosshair(0, 0);
+                var crosshair = graph.Plot.Add.Crosshair(0, 0);
+                crosshair.LineColor = Colors.Black;
                 
                 // aggiunge la funzione usando NCalc
-                graph.Plot.Add.Function(x =>
+                var function = graph.Plot.Add.Function(x =>
                 {
                     expr.Parameters["x"] = x;
                     return Convert.ToDouble(expr.Evaluate());
                 });
+                
+                function.LineColor = Colors.Red;
+                function.LineWidth = 2;
                 graph.Plot.Axes.SetLimits(-5, 5, -5, 5);
                 // force pixels to have a 1:1 scale ratio
                 graph.Plot.Axes.SquareUnits();
