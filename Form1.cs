@@ -40,8 +40,17 @@ namespace FunctionCalculator
                 // aggiunge la funzione usando NCalc
                 var function = graph.Plot.Add.Function(x =>
                 {
-                    expr.Parameters["x"] = x;
-                    return Convert.ToDouble(expr.Evaluate());
+                    try
+                    {
+                        expr.Parameters["x"] = x;
+                        return Convert.ToDouble(expr.Evaluate());
+                    }
+                    catch (Exception exception)
+                    {
+                        MessageBox.Show(exception.Message);
+                        return 0;
+                    }
+                    
                 });
                 
                 function.LineColor = Colors.Red;
