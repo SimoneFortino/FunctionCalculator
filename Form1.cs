@@ -67,8 +67,22 @@ namespace FunctionCalculator
 
         private void button2_Click(object sender, EventArgs e)
         {
-            string help = "prova";
-            MessageBox.Show(help);
+            DialogResult result = MessageBox.Show(
+                "Do you need help",       // text
+                "Help",                         // title
+                MessageBoxButtons.YesNo,                // yes or no button
+                MessageBoxIcon.Information,             // icons on the textbox
+                MessageBoxDefaultButton.Button1         // type of button
+            );
+
+            if (result == DialogResult.Yes)
+            {
+                MessageBox.Show("Helper:" + Environment.NewLine + "Supported character:  +  -  /  *  Sin( ) Sqrt( )  " + Environment.NewLine + "Do not use spaces");
+            }
+            if (result == DialogResult.No)
+            {
+                MessageBox.Show("Okidoki👍");
+            }
         }
     }
 }
