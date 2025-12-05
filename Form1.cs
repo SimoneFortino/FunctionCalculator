@@ -48,7 +48,10 @@ namespace FunctionCalculator
                     catch (Exception exception)
                     {
                         MessageBox.Show(exception.Message);
-                        return 0;
+                        expr = new Expression("0");
+                        expr.Parameters["x"] = x;
+                        return Convert.ToDouble(expr.Evaluate());
+
                     }
                     
                 });
