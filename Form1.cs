@@ -13,7 +13,7 @@ namespace FunctionCalculator
     {
         
         // readonly FormsPlot formsPlot = new FormsPlot() { Dock = DockStyle.Fill };
-        private FormsPlot plot = new FormsPlot() { Dock = DockStyle.Fill };
+        private FormsPlot grafico = new FormsPlot() { Dock = DockStyle.Fill };
         
         
         
@@ -22,9 +22,9 @@ namespace FunctionCalculator
             InitializeComponent();
             
             // Add the FormsPlot to the panel
-            panel1.Controls.Add(plot);
+            panel1.Controls.Add(grafico);
 
-            plot.Plot.Add.Crosshair(0, 0);
+            grafico.Plot.Add.Crosshair(0, 0);
         }
 
         private void calculateButton_Click(object sender, EventArgs e)
@@ -32,28 +32,29 @@ namespace FunctionCalculator
             try
             {
                 var expr = new Expression(functionTextBox.Text);
-                plot.Plot.Clear();
-                plot.Plot.Add.Crosshair(0, 0);
+                grafico.Plot.Clear();
+                grafico.Plot.Add.Crosshair(0, 0);
                 
                 // aggiunge la funzione usando NCalc
-                plot.Plot.Add.Function(x =>
+                grafico.Plot.Add.Function(x =>
                 {
                     expr.Parameters["x"] = x;
                     return Convert.ToDouble(expr.Evaluate());
                 });
-                plot.Plot.Axes.SetLimits(-5, 5, -5, 5);
+                grafico.Plot.Axes.SetLimits(-5, 5, -5, 5);
                 // force pixels to have a 1:1 scale ratio
-                plot.Plot.Axes.SquareUnits();
+                grafico.Plot.Axes.SquareUnits();
 
                 // even if you try to "stretch" the axis, it will adjust the axis limits automatically
-                plot.Plot.Axes.SetLimits(-10, 10, -10, 10);
+                grafico.Plot.Axes.SetLimits(-10, 10, -10, 10);
                 
-                plot.Refresh();
+                grafico.Refresh();
                 
             }
             catch (Exception exception)
             {
                 MessageBox.Show(exception.Message);
+                //MessageBox.Show(help);
             }
             
         }
@@ -63,6 +64,11 @@ namespace FunctionCalculator
             throw new System.NotImplementedException();
         }
 
-        
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string help = "prova";
+            MessageBox.Show(help);
+        }
     }
 }
