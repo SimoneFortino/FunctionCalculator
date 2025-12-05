@@ -13,7 +13,7 @@ namespace FunctionCalculator
     {
         
         // readonly FormsPlot formsPlot = new FormsPlot() { Dock = DockStyle.Fill };
-        private FormsPlot grafico = new FormsPlot() { Dock = DockStyle.Fill };
+        private FormsPlot graph = new FormsPlot() { Dock = DockStyle.Fill };
         
         
         
@@ -22,9 +22,9 @@ namespace FunctionCalculator
             InitializeComponent();
             
             // Add the FormsPlot to the panel
-            panel1.Controls.Add(grafico);
+            panel1.Controls.Add(graph);
 
-            grafico.Plot.Add.Crosshair(0, 0);
+            graph.Plot.Add.Crosshair(0, 0);
         }
 
         private void calculateButton_Click(object sender, EventArgs e)
@@ -32,23 +32,23 @@ namespace FunctionCalculator
             try
             {
                 var expr = new Expression(functionTextBox.Text);
-                grafico.Plot.Clear();
-                grafico.Plot.Add.Crosshair(0, 0);
+                graph.Plot.Clear();
+                graph.Plot.Add.Crosshair(0, 0);
                 
                 // aggiunge la funzione usando NCalc
-                grafico.Plot.Add.Function(x =>
+                graph.Plot.Add.Function(x =>
                 {
                     expr.Parameters["x"] = x;
                     return Convert.ToDouble(expr.Evaluate());
                 });
-                grafico.Plot.Axes.SetLimits(-5, 5, -5, 5);
+                graph.Plot.Axes.SetLimits(-5, 5, -5, 5);
                 // force pixels to have a 1:1 scale ratio
-                grafico.Plot.Axes.SquareUnits();
+                graph.Plot.Axes.SquareUnits();
 
                 // even if you try to "stretch" the axis, it will adjust the axis limits automatically
-                grafico.Plot.Axes.SetLimits(-10, 10, -10, 10);
+                graph.Plot.Axes.SetLimits(-10, 10, -10, 10);
                 
-                grafico.Refresh();
+                graph.Refresh();
                 
             }
             catch (Exception exception)
