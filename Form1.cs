@@ -49,7 +49,7 @@ namespace FunctionCalculator
                     {
                         MessageBox.Show(exception.Message);
                         expr = new Expression("0");
-                        expr.Parameters["x"] = x;
+                        functionTextBox.Clear();
                         return Convert.ToDouble(expr.Evaluate());
 
                     }
