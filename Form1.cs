@@ -85,13 +85,12 @@ namespace FunctionCalculator
         {
             DialogResult response = MessageBox.Show(
                 "Available functions:" +
-                "\nExp(x)\t\tLog(x)" +
-                "\nLog10(x)\t\tMax(x, y)" +
-                "\nMin(x, y)\t\tPow(x, y)" +
-                "\nTan(x)\t\tCos(x)" +
-                "\nSin(x)\t\tSqrt(x)" +
-                "\n\nVuoi vedere le funzioni avanzate?",
-                "Helper",
+                "\n\nExp(x)\t\tSqrt(x)" +
+                "\nLog(x)\t\tLog10(x)" +
+                "\nCos(x)\t\tSin(x)" +
+                "\nTan(x)" +
+                "\n\nDo you want to view more advanced functions?",
+                "Help",
                 MessageBoxButtons.YesNo);
             if (response == DialogResult.Yes)
             {
@@ -100,7 +99,10 @@ namespace FunctionCalculator
                         "\nTruncate(x)\t\tFloor(x)" +
                         "\nAbs(x)\t\tAcos(x)" +
                         "\nAsin(x)\t\tAtan(x)" +
-                        "\nSign(x)\t\tCeiling(x)"
+                        "\nSign(x)\t\tCeiling(x)" +
+                        "\nMax(x, y)\t\tMin(x, y)" +
+                        "\nPow(x, y)", "Advance help"
+
                     );
             }
         }
