@@ -51,7 +51,6 @@ namespace FunctionCalculator
                         expr = new Expression("0");
                         functionTextBox.Clear();
                         return Convert.ToDouble(expr.Evaluate());
-
                     }
                     
                 });
@@ -84,22 +83,19 @@ namespace FunctionCalculator
 
         private void button2_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show(
-                "Do you need help",       // text
-                "Help",                         // title
-                MessageBoxButtons.YesNo,                // yes or no button
-                MessageBoxIcon.Information,             // icons on the textbox
-                MessageBoxDefaultButton.Button1         // type of button
-            );
-
-            if (result == DialogResult.Yes)
-            {
-                MessageBox.Show("Helper:" + Environment.NewLine + "Supported character:  +  -  /  *  Sin( ) Sqrt( )  " + Environment.NewLine + "Do not use spaces");
-            }
-            if (result == DialogResult.No)
-            {
-                MessageBox.Show("Okidoki👍");
-            }
+            MessageBox.Show(
+                "Available functions:" +
+                "\n\nAbs(x)\t\tAcos(x)" +
+                "\nAsin(x)\t\tAtan(x)" +
+                "\nCeiling(x)\t\tCos(x)" +
+                "\nExp(x)\t\tFloor(x)" +
+                "\nTruncate(x)\tLog(x)" +
+                "\nLog10(x)\t\tMax(x, y)" +
+                "\nMin(x, y)\t\tPow(x, y)" +
+                "\nRound(x)\t\tSign(x)" +
+                "\nSin(x)\t\tSqrt(x)" +
+                "\nTan(x)\t\tIEEERemainder(x, y)",
+                "Helper");
         }
     }
 }
