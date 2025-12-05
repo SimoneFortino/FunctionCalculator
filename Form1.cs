@@ -51,6 +51,7 @@ namespace FunctionCalculator
                         expr = new Expression("0");
                         functionTextBox.Clear();
                         return Convert.ToDouble(expr.Evaluate());
+                        //fare in modo che si apra il messaggio di help
                     }
                     
                 });
@@ -70,7 +71,6 @@ namespace FunctionCalculator
             catch (Exception exception)
             {
                 MessageBox.Show(exception.Message);
-                //MessageBox.Show(help);
             }
             
         }
@@ -83,19 +83,26 @@ namespace FunctionCalculator
 
         private void button2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(
+            DialogResult response = MessageBox.Show(
                 "Available functions:" +
-                "\n\nAbs(x)\t\tAcos(x)" +
-                "\nAsin(x)\t\tAtan(x)" +
-                "\nCeiling(x)\t\tCos(x)" +
-                "\nExp(x)\t\tFloor(x)" +
-                "\nTruncate(x)\tLog(x)" +
+                "\nExp(x)\t\tLog(x)" +
                 "\nLog10(x)\t\tMax(x, y)" +
                 "\nMin(x, y)\t\tPow(x, y)" +
-                "\nRound(x)\t\tSign(x)" +
+                "\nTan(x)\t\tCos(x)" +
                 "\nSin(x)\t\tSqrt(x)" +
-                "\nTan(x)\t\tIEEERemainder(x, y)",
-                "Helper");
+                "\n\nVuoi vedere le funzioni avanzate?",
+                "Helper",
+                MessageBoxButtons.YesNo);
+            if (response == DialogResult.Yes)
+            {
+                MessageBox.Show(
+                    "Round(x)\t\tIEEERemainder(x, y)" + 
+                        "\nTruncate(x)\t\tFloor(x)" +
+                        "\nAbs(x)\t\tAcos(x)" +
+                        "\nAsin(x)\t\tAtan(x)" +
+                        "\nSign(x)\t\tCeiling(x)"
+                    );
+            }
         }
     }
 }
