@@ -9,24 +9,28 @@ namespace FunctionCalculator
 {
     public class DerivativeCalc 
     {
-        public double CalculateDerivative(String expression, double xValue)
+        public Expression CalculateDerivative(String expression, double xValue)
         {
             try
             {
+                String equationF = "(x - k)*m + p";
                 Console.WriteLine("arriva:\t" + expression);
                 Entity f =expression.ToEntity();
                 Console.WriteLine("convertito a entity:\t" + f.ToString());
 
                 // calcolo il limite per h → 0
-                Entity limit = f.Limit("h", 0);
-                Console.WriteLine(limit.ToString());
-                Console.WriteLine("diocane");
-                return 0;
-            }
+                // Entity limit = f.Limit("h", 0);
+                // Console.WriteLine(f.Limit("h", 0));
+
+                double m = Convert.ToDouble(f.Limit("h", 0));
+                
+
+                return null;
+            }             
             catch (Exception e)
             {
                 MessageBox.Show(e.Message + "\nerrore derivata");
-                return 0;
+                return null;
             }
             
 

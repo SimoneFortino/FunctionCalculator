@@ -87,9 +87,9 @@ namespace FunctionCalculator
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(654, 112);
+            this.button1.Location = new System.Drawing.Point(620, 8);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(101, 90);
+            this.button1.Size = new System.Drawing.Size(101, 29);
             this.button1.TabIndex = 10;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
