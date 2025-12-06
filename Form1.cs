@@ -1,6 +1,7 @@
 using System;
 using System.Windows.Forms;
 using System.Drawing;
+using System.Linq;
 using ScottPlot;
 using ScottPlot.WinForms;
 using NCalc;
@@ -113,6 +114,9 @@ namespace FunctionCalculator
                 double xValue = 2;
                 String expressionString = functionTextBox.Text;
                 expressionString = expressionString.Replace("x", "h +" + xValue);
+                expressionString = expressionString.Insert(0, "(");
+                expressionString = String.Concat(expressionString, ") / h");
+                Console.WriteLine(expressionString);
                 DerivativeCalc derivativeCalc = new DerivativeCalc();
                 derivativeCalc.CalculateDerivative(expressionString, xValue);
                 
