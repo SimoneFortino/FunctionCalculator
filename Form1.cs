@@ -6,7 +6,8 @@ using ScottPlot.WinForms;
 using NCalc;
 using ScottPlot.DataSources;
 using Color = ScottPlot.Color;
-
+using AngouriMath;
+using AngouriMath.Extensions;
 
 namespace FunctionCalculator
 {
@@ -21,14 +22,12 @@ namespace FunctionCalculator
         public Form1()
         {
             InitializeComponent();
-            
             // Add the FormsPlot to the panel
             panel1.Controls.Add(graph);
-
+            
             var crosshair = graph.Plot.Add.Crosshair(0, 0);
             crosshair.LineColor = Colors.Black;
         }
-
         private void calculateButton_Click(object sender, EventArgs e)
         {
             try
@@ -67,9 +66,6 @@ namespace FunctionCalculator
                 graph.Plot.Axes.SetLimits(-10, 10, -10, 10);
                 
                 graph.Refresh();
-                
-                string expressionText = expr.ParsedExpression.ToString();
-                Console.WriteLine(expressionText);
             }
             catch (Exception exception)
             {

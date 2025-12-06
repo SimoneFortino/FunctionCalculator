@@ -2,6 +2,7 @@
 using System;
 using System.Windows.Forms;
 using AngouriMath;
+using AngouriMath.Extensions;
 
 
 namespace FunctionCalculator
@@ -12,7 +13,16 @@ namespace FunctionCalculator
         {
             try
             {
-                
+                Console.WriteLine(expression.ToString() + " \t" + xValue);
+                    String expr = expression.ParsedExpression.ToString();
+                    Console.WriteLine(expr);
+                    Entity f =expr.ToEntity();
+                    Console.WriteLine(f);
+
+                    // calcolo il limite per h → Xvalue
+                    Entity limit = f.Limit("h", 0);
+                    Console.WriteLine(f.Limit("h", 0));
+
                 
                 return 0;
             }
