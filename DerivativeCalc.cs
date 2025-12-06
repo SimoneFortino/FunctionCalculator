@@ -19,7 +19,8 @@ namespace FunctionCalculator
 
                 // calcolo il limite per h → 0
                 Entity limit = f.Limit("h", 0);
-                Console.WriteLine(f.Limit("h", 0));
+                Console.WriteLine(limit.ToString());
+                Console.WriteLine("diocane");
                 return 0;
             }
             catch (Exception e)
