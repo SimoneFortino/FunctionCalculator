@@ -126,5 +126,10 @@ namespace FunctionCalculator
                 MessageBox.Show(error.Message + "\n errore button_1");
             }
         }
+
+        private void trackBar1_Scroll(object sender, EventArgs e)
+        {
+//trackbar scroll            
+        }
     }
 }
