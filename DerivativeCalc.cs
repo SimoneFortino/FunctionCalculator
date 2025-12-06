@@ -13,15 +13,13 @@ namespace FunctionCalculator
         {
             try
             {
-                Console.WriteLine(expression);
+                Console.WriteLine("arriva:\t" + expression);
                 Entity f =expression.ToEntity();
-                Console.WriteLine(f);
+                Console.WriteLine("convertito a entity:\t" + f.ToString());
 
-                // calcolo il limite per h → Xvalue
+                // calcolo il limite per h → 0
                 Entity limit = f.Limit("h", 0);
                 Console.WriteLine(f.Limit("h", 0));
-
-                
                 return 0;
             }
             catch (Exception e)
