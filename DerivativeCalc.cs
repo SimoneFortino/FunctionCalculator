@@ -11,17 +11,21 @@ namespace FunctionCalculator
         {
             try
             {
-                expression.Parameters["x"] = xValue;
-                double functionResult = Convert.ToDouble(expression.Evaluate());
+                /*
+                 expression.Parameters["x"] = ("h + " + xValue);
+                string functionResult = Convert.ToString(expression.Evaluate());
+                string expressionText = expression.ParsedExpression.ToString();
+                
+                Console.WriteLine(expressionText);
                 Console.WriteLine(functionResult);
-                expression.Parameters["x"] = ("h + " + xValue);
+                */
                 string expressionText = expression.ParsedExpression.ToString();
                 Console.WriteLine(expressionText);
                 return 0;
             }
             catch (Exception e)
             {
-                MessageBox.Show(e.Message);
+                MessageBox.Show(e.Message + "\nerrore derivata");
                 return 0;
             }
             

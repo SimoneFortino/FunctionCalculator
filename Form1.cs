@@ -68,6 +68,8 @@ namespace FunctionCalculator
                 
                 graph.Refresh();
                 
+                string expressionText = expr.ParsedExpression.ToString();
+                Console.WriteLine(expressionText);
             }
             catch (Exception exception)
             {
@@ -110,9 +112,18 @@ namespace FunctionCalculator
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var expr = new Expression(functionTextBox.Text);
-            DerivativeCalc test = new DerivativeCalc();
-            test.CalculateDerivative(expr, 2);
+            try
+            {
+                var expr1 = new Expression(functionTextBox.Text);
+                //DerivativeCalc test = new DerivativeCalc();
+                //test.CalculateDerivative(expr, 2);
+                string expressionText = expr1.ParsedExpression.ToString();
+                Console.WriteLine(expressionText);
+            }
+            catch (Exception errore)
+            {
+                MessageBox.Show(errore.Message + "\n errore button_1");
+            }
         }
     }
 }
