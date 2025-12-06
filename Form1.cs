@@ -114,15 +114,17 @@ namespace FunctionCalculator
         {
             try
             {
-                var expr1 = new Expression(functionTextBox.Text);
-                //DerivativeCalc test = new DerivativeCalc();
-                //test.CalculateDerivative(expr, 2);
-                string expressionText = expr1.ParsedExpression.ToString();
-                Console.WriteLine(expressionText);
+                double xValue = 2;
+                String expressionString = functionTextBox.Text;
+                expressionString.Replace("x", "h +" + xValue);
+                Expression expression = new Expression(expressionString);
+                DerivativeCalc derivativeCalc = new DerivativeCalc();
+                derivativeCalc.CalculateDerivative(expression, xValue);
+                
             }
-            catch (Exception errore)
+            catch (Exception error)
             {
-                MessageBox.Show(errore.Message + "\n errore button_1");
+                MessageBox.Show(error.Message + "\n errore button_1");
             }
         }
     }

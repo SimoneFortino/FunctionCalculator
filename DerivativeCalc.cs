@@ -1,6 +1,7 @@
 ﻿using NCalc;
 using System;
 using System.Windows.Forms;
+using AngouriMath;
 
 
 namespace FunctionCalculator
@@ -11,16 +12,8 @@ namespace FunctionCalculator
         {
             try
             {
-                /*
-                 expression.Parameters["x"] = ("h + " + xValue);
-                string functionResult = Convert.ToString(expression.Evaluate());
-                string expressionText = expression.ParsedExpression.ToString();
                 
-                Console.WriteLine(expressionText);
-                Console.WriteLine(functionResult);
-                */
-                string expressionText = expression.ParsedExpression.ToString();
-                Console.WriteLine(expressionText);
+                
                 return 0;
             }
             catch (Exception e)
@@ -33,3 +26,20 @@ namespace FunctionCalculator
         }
     }
 }
+
+/*
+ * funzione limite:
+ * double Limit(Func<double, double> func, double point)
+{
+    double h = 1e-6;
+
+    double left  = func(point - h);
+    double right = func(point + h);
+
+    return (left + right) / 2;
+}
+
+double result = Limit(x => Math.Sin(x) / x, 0);
+Console.WriteLine(result);   // ≈ 1
+
+ */
