@@ -4,4 +4,5 @@
   &lt;Assembly Path="C:\Users\Giona Fortino\OneDrive\Desktop\ProgettiRider\FunctionCalculator\packages\NCalcSync.5.9.0\lib\net462\NCalc.Sync.dll" /&gt;&#xD;
 &lt;/AssemblyExplorer&gt;</s:String>
 	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=FunctionCalculator_002FForm1/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=FunctionCalculator_002FProperties_002FResources/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/ResxEditorPersonal/Initialized/@EntryValue">True</s:Boolean></wpf:ResourceDictionary>

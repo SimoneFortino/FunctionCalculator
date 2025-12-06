@@ -7,6 +7,7 @@ using NCalc;
 using ScottPlot.DataSources;
 using Color = ScottPlot.Color;
 
+
 namespace FunctionCalculator
 {
     public partial class Form1 : Form
@@ -105,6 +106,13 @@ namespace FunctionCalculator
 
                     );
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var expr = new Expression(functionTextBox.Text);
+            DerivativeCalc test = new DerivativeCalc();
+            test.CalculateDerivative(expr, 2);
         }
     }
 }
