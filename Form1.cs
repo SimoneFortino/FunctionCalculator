@@ -113,9 +113,8 @@ namespace FunctionCalculator
                 double xValue = 2;
                 String expressionString = functionTextBox.Text;
                 expressionString.Replace("x", "h +" + xValue);
-                Expression expression = new Expression(expressionString);
                 DerivativeCalc derivativeCalc = new DerivativeCalc();
-                derivativeCalc.CalculateDerivative(expression, xValue);
+                derivativeCalc.CalculateDerivative(expressionString, xValue);
                 
             }
             catch (Exception error)
