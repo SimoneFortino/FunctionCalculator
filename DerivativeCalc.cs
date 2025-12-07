@@ -13,24 +13,20 @@ namespace FunctionCalculator
         {
             try
             {
-                String equationF = "(x - k)*m + p";
-                Console.WriteLine("arriva:\t" + expression);
+                //String equationF = "(x - k)*m + p";
                 Entity f =expression.ToEntity();
-                Console.WriteLine("convertito a entity:\t" + f.ToString());
 
                 // calcolo il limite per h → 0
-                // Entity limit = f.Limit("h", 0);
-                // Console.WriteLine(f.Limit("h", 0));
-                
-                double m = Convert.ToDouble(f.Limit("h", 0));
+                Entity m = f.Limit("h", 0);
+                //calcola Y
+                Entity a = originalString.ToEntity();
+                var newExpr = a.Substitute("x", xValue);
+                var Y = newExpr.EvalNumerical();
 
-                Expression function = new Expression(originalString);
-                function.Parameters["x"] = xValue;
-                object objectFuncionResult = function.Evaluate();
-                double originalFunctionResult = Convert.ToDouble(objectFuncionResult);
-                Console.WriteLine(originalFunctionResult);
+                Entity equation = "Y-Yp=m*(X-Xp)".ToEntity();
                 
-
+                var finalEquation = equation.Substitute("Xp", xValue).Substitute("Yp", Y).Substitute("m",m);
+                
                 return null;
             }             
             catch (Exception e)
