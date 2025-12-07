@@ -113,12 +113,13 @@ namespace FunctionCalculator
             {
                 double xValue = 2;
                 String expressionString = functionTextBox.Text;
+                String originalString = functionTextBox.Text;
                 expressionString = expressionString.Replace("x", "(h +" + xValue + ")");
-                expressionString = expressionString.Insert(0, "(");
-                expressionString = String.Concat(expressionString, ") / h");
+                //expressionString = expressionString.Insert(0, "(");
+                //expressionString = String.Concat(expressionString, ") / h");
                 Console.WriteLine(expressionString);
                 DerivativeCalc derivativeCalc = new DerivativeCalc();
-                derivativeCalc.CalculateDerivative(expressionString, xValue);
+                derivativeCalc.CalculateDerivative(expressionString, xValue, originalString);
                 
             }
             catch (Exception error)

@@ -9,7 +9,7 @@ namespace FunctionCalculator
 {
     public class DerivativeCalc 
     {
-        public Expression CalculateDerivative(String expression, double xValue)
+        public Expression CalculateDerivative(String expression, double xValue, string originalString)
         {
             try
             {
@@ -21,8 +21,14 @@ namespace FunctionCalculator
                 // calcolo il limite per h → 0
                 // Entity limit = f.Limit("h", 0);
                 // Console.WriteLine(f.Limit("h", 0));
-
+                
                 double m = Convert.ToDouble(f.Limit("h", 0));
+
+                Expression function = new Expression(originalString);
+                function.Parameters["x"] = xValue;
+                object objectFuncionResult = function.Evaluate();
+                double originalFunctionResult = Convert.ToDouble(objectFuncionResult);
+                Console.WriteLine(originalFunctionResult);
                 
 
                 return null;
