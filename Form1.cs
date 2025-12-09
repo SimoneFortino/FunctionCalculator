@@ -116,8 +116,9 @@ namespace FunctionCalculator
                 String originalString = functionTextBox.Text;
 
                 DerivativeCalc derivativeCalc = new DerivativeCalc();
-                derivativeCalc.CalculateDerivative(expressionString, xValue, originalString);
-                
+                string equazione = derivativeCalc.CalculateDerivative(expressionString, xValue, originalString);
+                linkLabel1.Text = equazione;
+
             }
             catch (Exception error)
             {

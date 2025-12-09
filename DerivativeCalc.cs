@@ -9,7 +9,7 @@ namespace FunctionCalculator
 {
     public class DerivativeCalc 
     {
-        public Expression CalculateDerivative(String expression, double xValue, string originalString)
+        public string CalculateDerivative(String expression, double xValue, string originalString)
         {
             try
             {
@@ -36,8 +36,8 @@ namespace FunctionCalculator
                 Entity equation = "Y=m*(X-Xp)+Yp".ToEntity();
                 
                 var finalEquation = equation.Substitute("Xp", xValue).Substitute("Yp", y).Substitute("m",m);
-                
-                return null;
+                string finalequationstring=finalEquation.ToString();
+                return finalequationstring;
             }             
             catch (Exception e)
             {
