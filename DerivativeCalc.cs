@@ -13,19 +13,29 @@ namespace FunctionCalculator
         {
             try
             {
-                //String equationF = "(x - k)*m + p";
+                //calcola Y
+                Entity a = originalString.ToEntity();
+                var newExpr = a.Substitute("x", xValue);
+                var y = newExpr.EvalNumerical();
+                                
+                //preparazione equazione per limite
+                expression = expression.Replace("x", "(h +" + xValue + ")");
+                expression = expression.Insert(0, "(");
+                expression = expression.Insert(23, "-y)/ h");
+                string ystring= y.ToString();
+                expression = expression.Replace("y", ystring);
+                //expression = String.Concat(expression, "-"+y+")/ h");
+
                 Entity f =expression.ToEntity();
 
                 // calcolo il limite per h → 0
                 Entity m = f.Limit("h", 0);
-                //calcola Y
-                Entity a = originalString.ToEntity();
-                var newExpr = a.Substitute("x", xValue);
-                var Y = newExpr.EvalNumerical();
-
-                Entity equation = "Y-Yp=m*(X-Xp)".ToEntity();
                 
-                var finalEquation = equation.Substitute("Xp", xValue).Substitute("Yp", Y).Substitute("m",m);
+
+
+                Entity equation = "Y=m*(X-Xp)+Yp".ToEntity();
+                
+                var finalEquation = equation.Substitute("Xp", xValue).Substitute("Yp", y).Substitute("m",m);
                 
                 return null;
             }             
