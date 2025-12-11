@@ -3,7 +3,7 @@ using System;
 using System.Windows.Forms;
 using AngouriMath;
 using AngouriMath.Extensions;
-
+using static AngouriMath.MathS;
 
 namespace FunctionCalculator
 {
@@ -33,10 +33,13 @@ namespace FunctionCalculator
                 
 
 
-                Entity equation = "Y=m*(X-Xp)+Yp".ToEntity();
-                
-                var finalEquation = equation.Substitute("Xp", xValue).Substitute("Yp", y).Substitute("m",m);
+                Entity equation = "m*(X-Xp)+Yp".ToEntity();
+
+                var finalEquation = equation.Substitute("Xp", xValue).Substitute("Yp", y).Substitute("m", m);
                 string finalequationstring=finalEquation.ToString();
+                var expr = FromString(finalequationstring);
+                return finalequationstring.Simplify().ToString();
+                
                 return finalequationstring;
             }             
             catch (Exception e)

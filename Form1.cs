@@ -124,7 +124,7 @@ namespace FunctionCalculator
                 {
                     try
                     {
-                        derivativeExpression.Parameters["x"] = x;
+                        derivativeExpression.Parameters["X"] = x;
                         return Convert.ToDouble(derivativeExpression.Evaluate());
                     }
                     catch (Exception exception)
@@ -137,6 +137,7 @@ namespace FunctionCalculator
                     }
                     
                 });
+                graph.Refresh();
 
             }
             catch (Exception error)
