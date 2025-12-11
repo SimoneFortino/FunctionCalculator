@@ -9,6 +9,7 @@ using ScottPlot.DataSources;
 using Color = ScottPlot.Color;
 using AngouriMath;
 using AngouriMath.Extensions;
+using static AngouriMath.MathS;
 
 namespace FunctionCalculator
 {
@@ -111,13 +112,13 @@ namespace FunctionCalculator
         {
             try
             {
-                double xValue = 2;
+                double xValue = Convert.ToDouble(textBox1.Text);
                 String expressionString = functionTextBox.Text;
                 String originalString = functionTextBox.Text;
 
                 DerivativeCalc derivativeCalc = new DerivativeCalc();
                 string derivativeEquation = derivativeCalc.CalculateDerivative(expressionString, xValue, originalString);
-                linkLabel1.Text = derivativeEquation;
+                label2.Text = derivativeEquation;
                 
                 Expression derivativeExpression = new  Expression(derivativeEquation);
                 var derivativeFunction = graph.Plot.Add.Function(x =>

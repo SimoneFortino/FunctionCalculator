@@ -21,10 +21,10 @@ namespace FunctionCalculator
                 //preparazione equazione per limite
                 expression = expression.Replace("x", "(h +" + xValue + ")");
                 expression = expression.Insert(0, "(");
-                expression = expression.Insert(23, "-y)/ h");
+                int numeroCaratteri = expression.Length;
+                expression = expression.Insert(numeroCaratteri, "-y)/ h");
                 string ystring= y.ToString();
                 expression = expression.Replace("y", ystring);
-                //expression = String.Concat(expression, "-"+y+")/ h");
 
                 Entity f =expression.ToEntity();
 
