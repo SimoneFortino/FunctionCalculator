@@ -116,8 +116,27 @@ namespace FunctionCalculator
                 String originalString = functionTextBox.Text;
 
                 DerivativeCalc derivativeCalc = new DerivativeCalc();
-                string equazione = derivativeCalc.CalculateDerivative(expressionString, xValue, originalString);
-                linkLabel1.Text = equazione;
+                string derivativeEquation = derivativeCalc.CalculateDerivative(expressionString, xValue, originalString);
+                linkLabel1.Text = derivativeEquation;
+                
+                Expression derivativeExpression = new  Expression(derivativeEquation);
+                var derivativeFunction = graph.Plot.Add.Function(x =>
+                {
+                    try
+                    {
+                        derivativeExpression.Parameters["x"] = x;
+                        return Convert.ToDouble(derivativeExpression.Evaluate());
+                    }
+                    catch (Exception exception)
+                    {
+                        MessageBox.Show(exception.Message);
+                        derivativeExpression = new Expression("0");
+                        functionTextBox.Clear();
+                        return Convert.ToDouble(derivativeExpression.Evaluate());
+                        //fare in modo che si apra il messaggio di help
+                    }
+                    
+                });
 
             }
             catch (Exception error)
